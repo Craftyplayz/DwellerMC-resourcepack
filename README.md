@@ -15,6 +15,9 @@ DwellerCore downloads the SHA-1 when the server starts, so after a pack change a
 |---|---|
 | `assets/dwellermc/items/grappling_hook.json` | DwellerTools Grappling Hook item (`item_model`) |
 | `assets/dwellermc/items/rope.json` | DwellerTools rope blocks (item displays) |
+| `assets/dwellermc/items/drill.json` | DwellerTools Drill item (`item_model`) |
+| `assets/dwellermc/items/hammer.json` | DwellerTools Hammer item (`item_model`) |
+| `assets/dwellermc/items/paxel.json` | DwellerTools Paxel item (`item_model`) |
 
 `art/` holds the scripts that draw the textures (`py gen.py` in each folder). Copy a chosen result into `assets/`.
 
