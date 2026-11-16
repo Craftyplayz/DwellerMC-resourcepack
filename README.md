@@ -18,6 +18,7 @@ DwellerCore downloads the SHA-1 when the server starts, so after a pack change a
 | `assets/dwellermc/items/drill.json` | DwellerTools Drill item (`item_model`) |
 | `assets/dwellermc/items/hammer.json` | DwellerTools Hammer item (`item_model`) |
 | `assets/dwellermc/items/paxel.json` | DwellerTools Paxel item (`item_model`) |
+| `assets/minecraft/sounds.json` | DwellerEnchants: silences the totem sound (the attune animation is a silent totem; real totems are silent too) |
 
 `art/` holds the scripts that draw the textures (`py gen.py` in each folder). Copy a chosen result into `assets/`.
 
