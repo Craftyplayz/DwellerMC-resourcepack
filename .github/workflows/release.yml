@@ -1,0 +1,26 @@
+name: Release pack
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Zip the pack
+        run: |
+          zip -rX DwellerMC.zip pack.mcmeta pack.png assets
+          sha1sum DwellerMC.zip | cut -d' ' -f1 > DwellerMC.zip.sha1
+          cat DwellerMC.zip.sha1
+      - name: Upload to the "pack" release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view pack >/dev/null 2>&1 || gh release create pack --title "Resource pack" --notes "The current DwellerMC server pack. Rebuilt on every push to main."
+          gh release upload pack DwellerMC.zip DwellerMC.zip.sha1 --clobber
