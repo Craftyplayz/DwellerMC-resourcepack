@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "dwellermc:item/drill"
+    "model": "minecraft:item/netherite_pickaxe"
   }
 }

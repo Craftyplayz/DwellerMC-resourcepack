@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "dwellermc:block/rope"
+    "model": "minecraft:block/chain"
   }
 }
